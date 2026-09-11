@@ -18,6 +18,7 @@ FROM base AS api
 WORKDIR /app
 
 COPY --from=build --chown=node:node /prod/api /app
+COPY --chown=node:node .git /app/.git
 
 USER node
 
