@@ -22,4 +22,5 @@ COPY --from=build --chown=node:node /prod/api /app
 USER node
 
 EXPOSE 9000
-CMD [ "node", "src/cobalt" ]
+CMD [ "node", "src/cobalt.js" ]
+
